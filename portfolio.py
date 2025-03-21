@@ -1,7 +1,4 @@
 import streamlit as st
-import requests
-import openpyxl
-from io import BytesIO
 
 # Set the page title
 st.set_page_config(page_title = "Yi's Portfolio", page_icon = "📂", layout = "wide")
@@ -11,7 +8,7 @@ st.markdown("""
     <style>
     /* Limit content width and center it */
     .block-container {
-        max-width: 1400px;  /* Adjust this value to get the desired width */
+        max-width: 1600px;  /* Adjust this value to get the desired width */
         margin: 0 auto;     /* Center the content */
     }
     </style>
@@ -72,25 +69,18 @@ Currently, in my student position at Northeastern University, I am not only impr
 # Projects Display
 st.header("My Projects 📁")
 
-project1, project2 = st.columns(2)
-with project1:
-    st.subheader("Project 1: Project Annual Budget")
-    st.write("An AI-powered chatbot that helps users learn programming.")
+# Project 1
+st.subheader("Project 1: Project annual budget management")
+st.markdown("During my time as a Data Analyst at Sanofi Investment Co., Ltd., I was responsible for managing an annual financial budget of $1 million and utilized dynamic pivot charts for budget visualization and analysis. This successfully mitigated the risk of 30% of the budget being reclaimed. The dynamic chart played a crucial role in financial budget management, enhancing transparency in budget execution. It allowed the management team to monitor and adjust budget allocations in real-time on a weekly basis, ensuring efficient use of funds.\n\n"
+            "**Note:** The data has been processed and is for demonstration purposes only, not representing the actual financial situation.")
 
-# 直接下载链接
-github_url = "https://github.com/username/repository_name/raw/main/filename.xlsx"
+# Excel link
+iframe_code = '''
+<iframe src="https://1drv.ms/x/c/473cec0dd19689a0/IQT5vZn7u7l2QpkyO1PSDJLCATIS2tU9OKu3Jj2cKabjy2U"
+width="900" height="530" frameborder="0" scrolling="no"></iframe>
+'''
+st.markdown(iframe_code, unsafe_allow_html=True)
 
-# Get the file from Github
-response = requests.get(github_url)
-if response.status_code == 200:
-    # 加载 Excel 文件
-    wb = openpyxl.load_workbook(BytesIO(response.content))
-    sheet = wb.active
-    st.success("成功从 GitHub 加载 Excel 文件！")
-else:
-    st.error("无法从 GitHub 下载文件。请检查链接。")
-
-
-with project2:
-    st.subheader("Project 2: Task Manager App")
-    st.write("A productivity tool that helps manage tasks efficiently.")
+# Project 2
+st.subheader("Project 2: Task Manager App")
+st.write("A productivity tool that helps manage tasks efficiently.")
