@@ -23,16 +23,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Check installed packages
+        run: pip freeze
+
       - name: Install Heroku CLI
         run: |
           curl https://cli-assets.heroku.com/install.sh | sh
+
+      - name: Login to Heroku
+        run: echo $HEROKU_API_KEY | heroku auth:token
+
+      - name: Remove existing Heroku remote (if exists)
+        run: git remote remove heroku || true
+
+      - name: Add Heroku remote
+        run: git remote add heroku https://git.heroku.com/streamlit-portfolio.git
 
       - name: Verify Heroku remote
         run: git remote -v
 
       - name: Deploy to Heroku
-        run: |
-          git remote add heroku https://git.heroku.com/streamlit-portfolio.git
-          git push heroku main
+        run: git push heroku main
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
