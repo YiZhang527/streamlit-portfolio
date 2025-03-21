@@ -1,4 +1,7 @@
 import streamlit as st
+import requests
+import openpyxl
+from io import BytesIO
 
 # Set the page title
 st.set_page_config(page_title = "Yi's Portfolio", page_icon = "📂", layout = "wide")
@@ -71,8 +74,22 @@ st.header("My Projects 📁")
 
 project1, project2 = st.columns(2)
 with project1:
-    st.subheader("Project 1: AI Chatbot")
+    st.subheader("Project 1: Project Annual Budget")
     st.write("An AI-powered chatbot that helps users learn programming.")
+
+# 直接下载链接
+github_url = "https://github.com/username/repository_name/raw/main/filename.xlsx"
+
+# Get the file from Github
+response = requests.get(github_url)
+if response.status_code == 200:
+    # 加载 Excel 文件
+    wb = openpyxl.load_workbook(BytesIO(response.content))
+    sheet = wb.active
+    st.success("成功从 GitHub 加载 Excel 文件！")
+else:
+    st.error("无法从 GitHub 下载文件。请检查链接。")
+
 
 with project2:
     st.subheader("Project 2: Task Manager App")
