@@ -29,8 +29,8 @@ jobs:
 
       - name: Deploy to Heroku
         run: |
-          git remote add heroku https://git.heroku.com/<your-heroku-app>.git  # 将 `<your-heroku-app>` 替换为您的 Heroku 应用名称
-          git push heroku main  # 推送到 Heroku
+          git remote add heroku https://git.heroku.com/streamlit-portfolio.git
+          git push heroku main
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }} 
 
