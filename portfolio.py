@@ -28,12 +28,6 @@ with col3:
 
 
 
-
-
-
-
-
-
 # Projects Display
 st.header("My Projects")
 
