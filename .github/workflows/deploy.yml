@@ -13,23 +13,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.12
 
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # 安装项目的依赖
+          pip install -r requirements.txt
 
+      - name: Verify Heroku remote
+        run: git remote -v
 
       - name: Deploy to Heroku
         run: |
           git remote add heroku https://git.heroku.com/streamlit-portfolio.git
           git push heroku main
         env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }} 
-
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
