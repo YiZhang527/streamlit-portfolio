@@ -85,12 +85,12 @@ st.markdown("\n")
 
 # Project 2
 st.subheader("Project 2: Medication Reminder App (UI/UX Design & Concept)")
-st.markdown("A medication reminder app that helps users adhere to their prescriptions. The goal was to create an intuitive, accessible, and visually engaging experience to improve medication compliance.\n\n"
-            "Key Contributions:\n\n"
-            "Conducted user research on patients' challenges with medication adherence.\n\n"
-            "Designed a clean and intuitive UI with Figma, focusing on ease of use and accessibility.\n\n"
-            "Created an interactive prototype to simulate the user journey and scheduling features.\n\n"
-            "Developed a notification and reminder system UI, ensuring clear and actionable alerts.")
+st.markdown("A medication reminder app that helps users adhere to their prescriptions. \n\n"
+            "I led a cross-functional team to design and develop this app. "
+"Through user research, we identified key factors affecting medication adherence and designed a clean, user-friendly UI in Figma to ensure accessibility and a seamless experience. "
+"We created an interactive prototype to optimize the user journey and scheduling process."
+"I led the development of a reminder and encouragement system, using clear notifications and motivational mechanisms to enhance long-term adherence and help users build better medication habits.")
+
 
 # Figma link
 figma_embed_code = """
