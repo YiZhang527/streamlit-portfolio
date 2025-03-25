@@ -84,7 +84,7 @@ st.markdown(iframe_code, unsafe_allow_html=True)
 st.markdown("\n") 
 
 # Project 2
-st.subheader("Project 2: Medication Reminder App (UI/UX Design & Concept)")
+st.subheader("Project 2: Medication Reminder App")
 st.markdown("A medication reminder app that helps users adhere to their prescriptions. \n\n"
             "I led a cross-functional team to design and develop this app. "
 "Through user research, we identified key factors affecting medication adherence and designed a clean, user-friendly UI in Figma to ensure accessibility and a seamless experience. "
