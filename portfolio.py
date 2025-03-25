@@ -1,4 +1,6 @@
 import streamlit as st
+import sqlite3
+
 
 # Set the page title
 st.set_page_config(page_title = "Yi's Portfolio", page_icon = "📂", layout = "wide")
@@ -99,3 +101,37 @@ figma_embed_code = """
 </div>
 """
 st.markdown(figma_embed_code, unsafe_allow_html=True)
+
+
+
+
+conn = sqlite3.connect("likes.db")
+c = conn.cursor()
+
+# Create table
+c.execute("CREATE TABLE IF NOT EXISTS likes (count INTEGER)")
+conn.commit()
+
+# Get the current like count
+c.execute("SELECT count FROM likes")
+data = c.fetchone()
+if data is None:
+    c.execute("INSERT INTO likes (count) VALUES (0)")
+    conn.commit()
+    likes = 0
+else:
+    likes = data[0]
+
+st.markdown(f"### 👇If you like my portfolio, click here. Thank you for watching!")
+
+like_button = st.button("🩷", key="like_button")
+
+# Increase the like count when clicked and save to the database
+if like_button:
+    likes += 1
+    c.execute("UPDATE likes SET count = ?", (likes,))
+    conn.commit()
+
+st.write(f"{likes} people liked")
+
+conn.close()
