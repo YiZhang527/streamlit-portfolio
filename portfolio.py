@@ -41,14 +41,14 @@ st.markdown("Hello! I'm Yi, a passionate software engineer and data analyst.  \n
 
 # Show profile
 st.header("About Me")
-st.write("""
+st.markdown("""
 **I specialize in:**
 - Data Analysis & Databases 📊
 - UI/UX Design 🎨
 - Programming 💻
 """)
 
-st.write("**Let’s connect! Feel free to reach out:**")
+st.markdown("**Let’s connect! Feel free to reach out:**")
 # Display links side by side
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -61,7 +61,7 @@ with col3:
 
 # Work Experience
 st.header("Work 👩‍💻")
-st.write("""
+st.markdown("""
 I have a solid foundation in customer service and data analysis, allowing me to contribute diverse skills to every project. 
 I had a meaningful internship at Disney in Orlando and worked as a data analyst in the healthcare industry. 
 These experiences helped me develop skills in teamwork, analyzing complex data, and efficiently driving project progress. 
@@ -132,6 +132,6 @@ if like_button:
     c.execute("UPDATE likes SET count = ?", (likes,))
     conn.commit()
 
-st.write(f"{likes} people liked")
+st.markdown(f"{likes} people liked")
 
 conn.close()
