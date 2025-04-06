@@ -109,7 +109,7 @@ st.markdown("I designed and developed a responsive personal photography portfoli
 "I implemented responsive design techniques to ensure optimal viewing experience across various devices and screen sizes.")
 st.markdown("[**Click here to view my Photography Portfolio**](https://yizhang527.github.io/Yi-photography-portfolio)")
 
-st.image("photos.jpg", caption="Website Preview", use_container_width=True)
+st.image("image.png", caption="Website Preview", use_container_width=True)
 
 
 
