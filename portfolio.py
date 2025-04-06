@@ -102,6 +102,18 @@ figma_embed_code = """
 """
 st.markdown(figma_embed_code, unsafe_allow_html=True)
 
+# Project3
+st.subheader("Project 3: Medication Reminder App")
+st.markdown("I designed and developed a responsive personal photography portfolio website using HTML and CSS, and deployed it using GitHub Pages for seamless hosting." \
+"The website showcases my photography work in an aesthetically pleasing grid layout, with a clean user interface." \
+"I implemented responsive design techniques to ensure optimal viewing experience across various devices and screen sizes.")
+st.markdown("[**Click here to view my Photography Portfolio**](https://yizhang527.github.io/Yi-photography-portfolio)")
+
+st.image("photos.jpg", caption="Website Preview", use_container_width=True)
+
+
+
+
 
 
 
