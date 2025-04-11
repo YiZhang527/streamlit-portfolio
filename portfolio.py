@@ -97,7 +97,7 @@ st.markdown("A medication reminder app that helps users adhere to their prescrip
 # Figma link
 figma_embed_code = """
 <div style="display: flex; justify-content: center; width: 100%;">
-    <iframe style="border:none;" width="393" height="852" src="https://embed.figma.com/proto/ILpRP3vbw5qKeNmCNiAjFu/Bloom-Daily?node-id=392-2&p=f&scaling=scale-down-to-fit&content-scaling=fixed&page-id=426%3A25&embed-host=share" allowfullscreen></iframe>
+    <iframe style="border:none;" width="393" height="852" src="https://embed.figma.com/proto/ILpRP3vbw5qKeNmCNiAjFu/Bloom-Daily?node-id=382-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=426%3A25&starting-point-node-id=382%3A2&embed-host=share" allowfullscreen></iframe>
 </div>
 """
 st.markdown(figma_embed_code, unsafe_allow_html=True)
