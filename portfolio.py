@@ -139,11 +139,11 @@ st.markdown(f"### 👇If you like my portfolio, click here. Thank you for watchi
 like_button = st.button("🩷", key="like_button")
 
 # Increase the like count when clicked and save to the database
-if like_button:
-    likes += 1
-    c.execute("UPDATE likes SET count = ?", (likes,))
-    conn.commit()
+# if like_button:
+#     likes += 1
+#     c.execute("UPDATE likes SET count = ?", (likes,))
+#     conn.commit()
 
-st.markdown(f"{likes} people liked")
+# st.markdown(f"{likes} people liked")
 
-conn.close()
+# conn.close()
