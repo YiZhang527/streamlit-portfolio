@@ -1,6 +1,4 @@
 import streamlit as st
-import sqlite3
-
 
 # Set the page title
 st.set_page_config(page_title = "Yi's Portfolio", page_icon = "📂", layout = "wide")
@@ -72,38 +70,34 @@ Currently, in my student position at Northeastern University, I am not only impr
 st.header("My Projects 📁")
 
 # Project 1
-st.subheader("Project 1: Project annual budget management")
-st.markdown("During my time as a Data Analyst at Sanofi Investment Co., Ltd., I was responsible for managing an annual financial budget of $1 million and utilized dynamic pivot charts for budget visualization and analysis. This successfully mitigated the risk of 30% of the budget being reclaimed. The dynamic chart played a crucial role in financial budget management, enhancing transparency in budget execution. It allowed the management team to monitor and adjust budget allocations in real-time on a weekly basis, ensuring efficient use of funds.\n\n"
-            "**Note:** The data has been processed and is for demonstration purposes only, not representing the actual financial situation.")
+st.subheader("Project 1: Medication Reminder App Prototype")
+st.markdown("A conceptual medication reminder app designed to help users adhere to their prescription schedules. \n\n"
+            "I led a cross-functional team through the research and design phases of this application concept. "
+            "We conducted comprehensive market research to identify key factors affecting medication adherence among users. "
+            "Based on our findings, we created a clean, user-friendly UI design in Figma with accessibility as a priority. "
+            "Our interactive prototype demonstrates the planned user journey and scheduling functionality, featuring "
+            "a reminder and encouragement system designed to enhance medication adherence through timely notifications. "
+            "This project showcases our design thinking process and UI/UX skills while the development phase is planned for future implementation.")
 
-# Excel link
-iframe_code = '''
-<iframe src="https://1drv.ms/x/c/473cec0dd19689a0/IQT5vZn7u7l2QpkyO1PSDJLCATIS2tU9OKu3Jj2cKabjy2U"
-width="900" height="530" frameborder="0" scrolling="no"></iframe>
-'''
-st.markdown(iframe_code, unsafe_allow_html=True)
+# Create two-column layout
+col1, col2 = st.columns([7.5, 2.5])
 
-st.markdown("\n") 
+# Left column displays the poster
+with col1:
 
-# Project 2
-st.subheader("Project 2: Medication Reminder App")
-st.markdown("A medication reminder app that helps users adhere to their prescriptions. \n\n"
-            "I led a cross-functional team to design and develop this app. "
-"Through user research, we identified key factors affecting medication adherence and designed a clean, user-friendly UI in Figma to ensure accessibility and a seamless experience. "
-"We created an interactive prototype to optimize the user journey and scheduling process."
-"I led the development of a reminder and encouragement system, using clear notifications and motivational mechanisms to enhance long-term adherence and help users build better medication habits.")
+    st.image("PosterProject1.jpg", caption="Research Poster", use_container_width=True)
 
+# Right column displays Figma prototype
+with col2:
+    figma_embed_code = """
+    <div style="display: flex; justify-content: center; align-items: center; height: 750px; width: 100%;">
+        <iframe style="border:none; height: 750px; width: 100%;" src="https://embed.figma.com/proto/ILpRP3vbw5qKeNmCNiAjFu/Bloom-Daily?node-id=382-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=426%3A25&starting-point-node-id=382%3A2&embed-host=share" allowfullscreen></iframe>
+    </div>
+    """
+    st.markdown(figma_embed_code, unsafe_allow_html=True)
 
-# Figma link
-figma_embed_code = """
-<div style="display: flex; justify-content: center; width: 100%;">
-    <iframe style="border:none;" width="393" height="852" src="https://embed.figma.com/proto/ILpRP3vbw5qKeNmCNiAjFu/Bloom-Daily?node-id=382-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=426%3A25&starting-point-node-id=382%3A2&embed-host=share" allowfullscreen></iframe>
-</div>
-"""
-st.markdown(figma_embed_code, unsafe_allow_html=True)
-
-# Project3
-st.subheader("Project 3: Photography Portfolio")
+# Project2
+st.subheader("Project 2: Photography Portfolio")
 st.markdown("I designed and developed a responsive personal photography portfolio website using HTML and CSS, and deployed it using GitHub Pages for seamless hosting." \
 "The website showcases my photography work in an aesthetically pleasing grid layout, with a clean user interface." \
 "I implemented responsive design techniques to ensure optimal viewing experience across various devices and screen sizes.")
@@ -111,39 +105,3 @@ st.markdown("[**Click here to view my Photography Portfolio**](https://yizhang52
 
 st.image("image.png", caption="Website Preview", use_container_width=True)
 
-
-
-
-
-
-
-conn = sqlite3.connect("likes.db")
-c = conn.cursor()
-
-# Create table
-c.execute("CREATE TABLE IF NOT EXISTS likes (count INTEGER)")
-conn.commit()
-
-# Get the current like count
-c.execute("SELECT count FROM likes")
-data = c.fetchone()
-if data is None:
-    c.execute("INSERT INTO likes (count) VALUES (0)")
-    conn.commit()
-    likes = 0
-else:
-    likes = data[0]
-
-st.markdown(f"### 👇If you like my portfolio, click here. Thank you for watching!")
-
-like_button = st.button("🩷", key="like_button")
-
-# Increase the like count when clicked and save to the database
-if like_button:
-    likes += 1
-    c.execute("UPDATE likes SET count = ?", (likes,))
-    conn.commit()
-
-st.markdown(f"{likes} people liked")
-
-conn.close()
