@@ -54,7 +54,7 @@ with col1:
 with col2:
     st.markdown('![LinkedIn](https://img.icons8.com/fluency/48/linkedin.png) [LinkedIn](https://www.linkedin.com/in/yi-zhang-800765187/)', unsafe_allow_html=True)
 with col3:
-    st.markdown('![Resume](https://img.icons8.com/wired/48/resume.png) [Resume](https://github.com/YiZhang527/streamlit-portfolio/blob/45aff7089d9ed60a79c8d2fd991dc83d22dbf84c/Resume-Yi%20Zhang.pdf)', unsafe_allow_html=True)
+    st.markdown('![Resume](https://img.icons8.com/wired/48/resume.png) [Resume](https://github.com/YiZhang527/streamlit-portfolio/blob/main/Resume-Yi%20Zhang.pdf)', unsafe_allow_html=True)
 
 
 # Work Experience
