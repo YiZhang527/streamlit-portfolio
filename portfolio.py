@@ -61,7 +61,7 @@ with col3:
 st.header("Work 👩‍💻")
 st.markdown("""
 I have a solid foundation in customer service and data analysis, allowing me to contribute diverse skills to every project. 
-I had a meaningful internship at Disney in Orlando and worked as a data analyst in the healthcare industry. 
+I had a meaningful internship at Disney in Orlando, then specialized in data analysis and operations in the healthcare industry. 
 These experiences helped me develop skills in teamwork, analyzing complex data, and efficiently driving project progress. 
 Currently, in my student position at Northeastern University, I am not only improving my programming skills but also leading and developing projects to gain more practical experience.
 """)
