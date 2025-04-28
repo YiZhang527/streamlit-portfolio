@@ -85,7 +85,7 @@ col1, col2 = st.columns([7.5, 2.5])
 # Left column displays the poster
 with col1:
 
-    st.image("PosterProject1.jpg", caption="Research Poster", use_container_width=True)
+    st.image("BloomDailyPoster.jpg", caption="Research Poster", use_container_width=True)
 
 # Right column displays Figma prototype
 with col2:
