@@ -70,7 +70,16 @@ Currently, in my student position at Northeastern University, I am not only impr
 st.header("My Projects 📁")
 
 # Project 1
-st.subheader("Project 1: Medication Reminder App Prototype")
+st.subheader("Project 1: Data Quality Check & Cleaning Web Tool")
+st.markdown("A comprehensive web-based data cleaning and quality assessment tool designed to help users process Excel and CSV files with complete privacy protection. \n\n"
+           "I developed this tool using pure JavaScript, HTML5, and CSS to ensure all data processing happens directly in the user's browser, eliminating any server-side data storage or transmission. "
+           "Through careful implementation of efficient data structures and algorithms, the tool delivers fast performance even with large datasets while maintaining a responsive, interactive user interface. "
+           "The real-time validation system provides immediate feedback on data issues including missing values, type inconsistencies, and anomalies, with intuitive visualization of results. "
+           "Users can seamlessly clean their data with one-click operations and download both cleaned and annotated versions of their files.")
+st.markdown("[**🚀 Try Live Demo**](https://yizhang527.github.io/Data-viz-secure/) | [**💻 View Source Code**](https://github.com/yizhang527/Data-viz-secure)")
+
+# Project 2
+st.subheader("Project 2: Medication Reminder App Prototype")
 st.markdown("A conceptual medication reminder app designed to help users adhere to their prescription schedules. \n\n"
             "I led a cross-functional team through the research and design phases of this application concept. "
             "We conducted comprehensive market research to identify key factors affecting medication adherence among users. "
@@ -96,8 +105,8 @@ with col2:
     """
     st.markdown(figma_embed_code, unsafe_allow_html=True)
 
-# Project2
-st.subheader("Project 2: Photography Portfolio")
+# Project3
+st.subheader("Project 3: Photography Portfolio")
 st.markdown("I designed and developed a responsive personal photography portfolio website using HTML and CSS, and deployed it using GitHub Pages for seamless hosting." \
 "The website showcases my photography work in an aesthetically pleasing grid layout, with a clean user interface." \
 "I implemented responsive design techniques to ensure optimal viewing experience across various devices and screen sizes.")
