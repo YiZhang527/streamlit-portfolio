@@ -68,7 +68,7 @@ st.markdown("A Chrome browser extension that enables instant pronunciation looku
            "Through careful API design and event handling, I created a lightweight, privacy-focused tool with zero data collection. "
            "The extension was developed and shipped to the Chrome Web Store within one week, demonstrating rapid iteration and deployment capabilities.")
 st.markdown("**Tech Stack:** JavaScript, Chrome Extension APIs, Manifest V3, Content Scripts, Browser Storage API")
-st.markdown("[**🚀 Install from Chrome Web Store**](https://chromewebstore.google.com/detail/pronunciaid/ocmjnakkkgfkdnnlpkpcdonkdaglgdcg?authuser=0&hl=en) | [**💻 View Source Code**](https://github.com/yizhang527/PronunciAid)")
+st.markdown("[**🚀 Install from Chrome Web Store**](https://chromewebstore.google.com/detail/pronunciaid/ocmjnakkkgfkdnnlpkpcdonkdaglgdcg?authuser=0&hl=en) | [**💻 View Source Code**](https://github.com/AISHA-YI/PronunciAid)")
 
 
 # Project 2
