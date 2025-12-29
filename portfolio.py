@@ -39,7 +39,7 @@ st.markdown("Hello! I'm Yi, a passionate **Software Engineer** and **Machine Lea
 
 st.markdown("**Let’s connect! Feel free to reach out:**")
 # Display links side by side
-col1, col2, col3 = st.columns(4)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown('![GitHub](https://img.icons8.com/glyph-neue/48/github.png) [GitHub](https://github.com/YiZhang527)', unsafe_allow_html=True)
 with col2:
