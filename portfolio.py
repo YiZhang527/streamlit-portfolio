@@ -47,7 +47,7 @@ with col2:
 with col3:
     st.markdown('![Resume](https://img.icons8.com/wired/48/resume.png) [Resume](https://github.com/YiZhang527/streamlit-portfolio/blob/main/Resume-Yi%20Zhang.pdf)', unsafe_allow_html=True)
 with col4:
-    st.markdown('![Instagram](https://img.icons8.com/fluency/48/instagram.png) [Instagram](https://www.instagram.com/yiyiyi_its_yi/)', unsafe_allow_html=True)
+    st.markdown('![Instagram](https://img.icons8.com/fluency/48/instagram-new.png) [Instagram](https://www.instagram.com/yiyiyi_its_yi/)', unsafe_allow_html=True)
 
 # Projects Display
 st.header("My Projects 📁")
