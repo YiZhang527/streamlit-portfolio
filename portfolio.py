@@ -39,13 +39,15 @@ st.markdown("Hello! I'm Yi, a passionate **Software Engineer** and **Machine Lea
 
 st.markdown("**Let’s connect! Feel free to reach out:**")
 # Display links side by side
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(4)
 with col1:
     st.markdown('![GitHub](https://img.icons8.com/glyph-neue/48/github.png) [GitHub](https://github.com/YiZhang527)', unsafe_allow_html=True)
 with col2:
     st.markdown('![LinkedIn](https://img.icons8.com/fluency/48/linkedin.png) [LinkedIn](https://www.linkedin.com/in/yi-zhang-800765187/)', unsafe_allow_html=True)
 with col3:
     st.markdown('![Resume](https://img.icons8.com/wired/48/resume.png) [Resume](https://github.com/YiZhang527/streamlit-portfolio/blob/main/Resume-Yi%20Zhang.pdf)', unsafe_allow_html=True)
+with col4:
+    st.markdown('![Instagram](https://img.icons8.com/fluency/48/instagram.png) [Instagram](https://www.instagram.com/yiyiyi_its_yi/)', unsafe_allow_html=True)
 
 # Projects Display
 st.header("My Projects 📁")
@@ -71,6 +73,7 @@ st.markdown("[**🚀 Try Live Demo**](https://yizhang527.github.io/Data-viz-secu
 
 # Project 3
 st.subheader("Project 3: Medication Reminder App Prototype")
+st.markdown("**Tech Stack:** Figma, User Research, UI/UX Design, Prototyping")
 st.markdown("A conceptual medication reminder app designed to help users adhere to their prescription schedules. \n\n"
             "I led a cross-functional team through the research and design phases of this application concept. "
             "We conducted comprehensive market research to identify key factors affecting medication adherence among users. "
