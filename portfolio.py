@@ -34,17 +34,8 @@ st.markdown("""
 
 # Home page content
 st.title("Welcome to Yi's Portfolio 👋")
-st.markdown("Hello! I'm Yi, a passionate software engineer and data analyst.  \n"
+st.markdown("Hello! I'm Yi, a passionate **Software Engineer** and **Data Scientist**.  \n"
             "Currently, I'm pursuing a Master's degree in Information Systems at Northeastern University.")
-
-# Show profile
-st.header("About Me")
-st.markdown("""
-**I specialize in:**
-- Data Analysis & Databases 📊
-- UI/UX Design 🎨
-- Programming 💻
-""")
 
 st.markdown("**Let’s connect! Feel free to reach out:**")
 # Display links side by side
