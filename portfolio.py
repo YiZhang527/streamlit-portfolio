@@ -62,14 +62,12 @@ st.header("My Projects 📁")
 
 # Project 1
 st.subheader("Project 1: PronunciAid - Chrome Extension")
-st.markdown("A Chrome browser extension that enables instant pronunciation lookup for any selected text, streamlining language learning and reading workflows. Successfully published to the Chrome Web Store with 5-star user rating.\n\n"
-           "I built this extension using vanilla JavaScript and Chrome Extension APIs, implementing context menu integration and content script injection for seamless user interaction. "
-           "The extension automates YouGlish searches, reducing pronunciation lookup time from 15+ seconds to under 2 seconds. "
-           "Through careful API design and event handling, I created a lightweight, privacy-focused tool with zero data collection. "
-           "The extension was developed and shipped to the Chrome Web Store within one week, demonstrating rapid iteration and deployment capabilities.")
 st.markdown("**Tech Stack:** JavaScript, Chrome Extension APIs, Manifest V3, Content Scripts, Browser Storage API")
+st.markdown("I collaborated and shipped PronunciAid, a Chrome Extension that reduces pronunciation lookup time from 15+ seconds to under 2 seconds. Successfully published to the Chrome Web Store with 5-star user rating.\n\n"
+           "Built using vanilla JavaScript and Chrome Extension APIs, implementing context menu integration and content script injection for seamless user interaction. "
+           "Through careful API design and event handling, created a lightweight, privacy-focused tool with zero data collection. "
+           "Developed and deployed to the Chrome Web Store within one week, demonstrating rapid iteration and deployment capabilities.")
 st.markdown("[**🚀 Install from Chrome Web Store**](https://chromewebstore.google.com/detail/pronunciaid/ocmjnakkkgfkdnnlpkpcdonkdaglgdcg?authuser=0&hl=en) | [**💻 View Source Code**](https://github.com/AISHA-YI/PronunciAid)")
-
 
 # Project 2
 st.subheader("Project 2: Data Quality Check & Cleaning Web Tool")
