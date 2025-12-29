@@ -34,7 +34,7 @@ st.markdown("""
 
 # Home page content
 st.title("Welcome to Yi's Portfolio 👋")
-st.markdown("Hello! I'm Yi, a passionate **Software Engineer** and **Data Scientist**.  \n"
+st.markdown("Hello! I'm Yi, a passionate **Software Engineer** and **Machine Learning**.  \n"
             "Currently, I'm pursuing a Master's degree in Information Systems at Northeastern University.")
 
 st.markdown("**Let’s connect! Feel free to reach out:**")
