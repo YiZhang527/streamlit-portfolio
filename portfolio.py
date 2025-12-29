@@ -47,16 +47,6 @@ with col2:
 with col3:
     st.markdown('![Resume](https://img.icons8.com/wired/48/resume.png) [Resume](https://github.com/YiZhang527/streamlit-portfolio/blob/main/Resume-Yi%20Zhang.pdf)', unsafe_allow_html=True)
 
-
-# Work Experience
-st.header("Work 👩‍💻")
-st.markdown("""
-I have a solid foundation in customer service and data analysis, allowing me to contribute diverse skills to every project. 
-I had a meaningful internship at Disney in Orlando, then specialized in data analysis and operations in the healthcare industry. 
-These experiences helped me develop skills in teamwork, analyzing complex data, and efficiently driving project progress. 
-Currently, in my student position at Northeastern University, I am not only improving my programming skills but also leading and developing projects to gain more practical experience.
-""")
-
 # Projects Display
 st.header("My Projects 📁")
 
@@ -71,6 +61,7 @@ st.markdown("[**🚀 Install from Chrome Web Store**](https://chromewebstore.goo
 
 # Project 2
 st.subheader("Project 2: Data Quality Check & Cleaning Web Tool")
+st.markdown("**Tech Stack:** JavaScript, HTML5, CSS3, Papa Parse, SheetJS")
 st.markdown("A comprehensive web-based data cleaning and quality assessment tool designed to help users process Excel and CSV files with complete privacy protection. \n\n"
            "I developed this tool using pure JavaScript, HTML5, and CSS to ensure all data processing happens directly in the user's browser, eliminating any server-side data storage or transmission. "
            "Through careful implementation of efficient data structures and algorithms, the tool delivers fast performance even with large datasets while maintaining a responsive, interactive user interface. "
